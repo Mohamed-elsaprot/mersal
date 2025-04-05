@@ -51,7 +51,7 @@ class ApiService {
   }
 
   static Future putData({required String endPoint,}) async {
-    Response res = await _dio.put(baseUrl+endPoint);
+    Response res = await _dio.put(baseUrl+endPoint,);
     return res.data;
   }
 
